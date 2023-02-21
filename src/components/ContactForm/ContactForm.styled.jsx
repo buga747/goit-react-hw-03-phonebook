@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
 
-export const Form = styled.form`
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-`
+
+
 
 export const Label = styled.label`
       font-weight: bold;
@@ -16,13 +12,6 @@ export const Label = styled.label`
 export const LabelName = styled.p`
   margin-top: 4px;
   margin-bottom: 4px;
-`
-
-export const Input = styled.input`
-      padding: 10px;
-  margin-bottom: 10px;
-   border: 2px solid #ccc;
-  border-radius: 4px;
 `
 
 export const Button = styled.button`
@@ -39,3 +28,11 @@ export const Button = styled.button`
   background-color: #45a049;
 }
 `
+export const ErrorText = styled.p`
+    margin: 0;
+  font-size: 14px;
+  color: red;
+  ::first-letter {
+    text-transform: capitalize;
+  }
+`;
