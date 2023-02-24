@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Form, Field,} from 'formik';
+import { Form as FormContact, Field,} from 'formik';
 
 
-export const FormContact = styled(Form)`
+export const Form = styled(FormContact)`
       display: flex;
   flex-direction: column;
   align-items: center;
