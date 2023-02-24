@@ -1,23 +1,11 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage  } from 'formik';
-import { Label, LabelName, Button, ErrorText } from './ContactForm.styled';
+import { Formik, ErrorMessage  } from 'formik';
+import { Label, LabelName, Button, ErrorText, FormContact, Input } from './ContactForm.styled';
 import PropTypes from 'prop-types';
-import styled from "styled-components";
 import * as yup from 'yup';
 
-const FormContact = styled(Form)`
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-`
 
-const Input = styled(Field)`
-     padding: 10px;
-  margin-bottom: 10px;
-   border: 2px solid #ccc;
-  border-radius: 4px;
-`
+
 const FormError = ({ name }) => {
   return (
     <ErrorMessage

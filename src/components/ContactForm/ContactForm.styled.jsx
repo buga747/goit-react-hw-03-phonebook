@@ -1,7 +1,19 @@
 import styled from "styled-components";
+import { Form, Field,} from 'formik';
 
 
-
+export const FormContact = styled(Form)`
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`
+export const Input = styled(Field)`
+     padding: 10px;
+  margin-bottom: 10px;
+   border: 2px solid #ccc;
+  border-radius: 4px;
+`
 
 
 export const Label = styled.label`
